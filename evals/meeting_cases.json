@@ -1,0 +1,102 @@
+[
+  {
+    "id": "MS-01",
+    "scenario": "Website search improvements with unclear AI-search requirements",
+    "expected_check": "Requirements traceable to transcript; assumptions separate; feasibility uses Task 1 API; approval required."
+  },
+  {
+    "id": "MS-02",
+    "scenario": "E-commerce payment integration with provider not approved",
+    "expected_check": "Requirements traceable to transcript; assumptions separate; feasibility uses Task 1 API; approval required."
+  },
+  {
+    "id": "MS-03",
+    "scenario": "Follow-up adds stock filter and removes price filter",
+    "expected_check": "Requirements traceable to transcript; assumptions separate; feasibility uses Task 1 API; approval required."
+  },
+  {
+    "id": "MS-04",
+    "scenario": "Follow-up changes delivery date from six weeks to four weeks",
+    "expected_check": "Requirements traceable to transcript; assumptions separate; feasibility uses Task 1 API; approval required."
+  },
+  {
+    "id": "MS-05",
+    "scenario": "Follow-up defers AI search to a later phase",
+    "expected_check": "Requirements traceable to transcript; assumptions separate; feasibility uses Task 1 API; approval required."
+  },
+  {
+    "id": "MS-06",
+    "scenario": "Transcript contains contradictory requirements",
+    "expected_check": "Requirements traceable to transcript; assumptions separate; feasibility uses Task 1 API; approval required."
+  },
+  {
+    "id": "MS-07",
+    "scenario": "Transcript contains no budget",
+    "expected_check": "Requirements traceable to transcript; assumptions separate; feasibility uses Task 1 API; approval required."
+  },
+  {
+    "id": "MS-08",
+    "scenario": "Transcript includes a vague request to improve UX",
+    "expected_check": "Requirements traceable to transcript; assumptions separate; feasibility uses Task 1 API; approval required."
+  },
+  {
+    "id": "MS-09",
+    "scenario": "Transcript requests refund policy automation",
+    "expected_check": "Requirements traceable to transcript; assumptions separate; feasibility uses Task 1 API; approval required."
+  },
+  {
+    "id": "MS-10",
+    "scenario": "Long transcript with repeated requirements",
+    "expected_check": "Requirements traceable to transcript; assumptions separate; feasibility uses Task 1 API; approval required."
+  },
+  {
+    "id": "MS-11",
+    "scenario": "Transcript contains a request outside approved scope",
+    "expected_check": "Requirements traceable to transcript; assumptions separate; feasibility uses Task 1 API; approval required."
+  },
+  {
+    "id": "MS-12",
+    "scenario": "Client asks for fixed delivery date without dependencies",
+    "expected_check": "Requirements traceable to transcript; assumptions separate; feasibility uses Task 1 API; approval required."
+  },
+  {
+    "id": "MS-13",
+    "scenario": "Existing feature might be configurable",
+    "expected_check": "Requirements traceable to transcript; assumptions separate; feasibility uses Task 1 API; approval required."
+  },
+  {
+    "id": "MS-14",
+    "scenario": "Knowledge API unavailable during feasibility check",
+    "expected_check": "Requirements traceable to transcript; assumptions separate; feasibility uses Task 1 API; approval required."
+  },
+  {
+    "id": "MS-15",
+    "scenario": "No acceptance criteria are given",
+    "expected_check": "Requirements traceable to transcript; assumptions separate; feasibility uses Task 1 API; approval required."
+  },
+  {
+    "id": "MS-16",
+    "scenario": "Two speakers disagree about a feature",
+    "expected_check": "Requirements traceable to transcript; assumptions separate; feasibility uses Task 1 API; approval required."
+  },
+  {
+    "id": "MS-17",
+    "scenario": "Scope includes a third-party dependency",
+    "expected_check": "Requirements traceable to transcript; assumptions separate; feasibility uses Task 1 API; approval required."
+  },
+  {
+    "id": "MS-18",
+    "scenario": "A new request is proposed but not approved",
+    "expected_check": "Requirements traceable to transcript; assumptions separate; feasibility uses Task 1 API; approval required."
+  },
+  {
+    "id": "MS-19",
+    "scenario": "Reviewer rejects the proposal",
+    "expected_check": "Requirements traceable to transcript; assumptions separate; feasibility uses Task 1 API; approval required."
+  },
+  {
+    "id": "MS-20",
+    "scenario": "Reviewer approves a revised baseline",
+    "expected_check": "Requirements traceable to transcript; assumptions separate; feasibility uses Task 1 API; approval required."
+  }
+]

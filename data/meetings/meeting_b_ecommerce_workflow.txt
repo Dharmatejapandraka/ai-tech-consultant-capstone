@@ -1,0 +1,6 @@
+CLIENT: We need checkout improvements, order notifications, and a payment gateway integration.
+CONSULTANT: Which payment provider?
+CLIENT: We are considering Stripe, but our finance team must approve it. We need customers to receive an order confirmation and staff to receive a notification when an order is paid.
+CLIENT: We also want failed-payment messages. We have not confirmed whether the current platform supports our preferred provider in our country.
+CONSULTANT: Please provide the current checkout flow, test credentials, notification wording, and the payment provider's approval before implementation.
+CLIENT: We would like an estimate before committing to a date. No delivery date is approved yet.

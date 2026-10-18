@@ -1,0 +1,116 @@
+import os, json, uuid, time
+from typing import Any
+import httpx
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel, Field
+
+
+MODEL=os.getenv("GROQ_MODEL","llama-3.3-70b-versatile")
+GROQ_API_KEY=os.getenv("GROQ_API_KEY")
+GROQ_URL="https://api.groq.com/openai/v1/chat/completions"
+KNOWLEDGE_URL=os.getenv("KNOWLEDGE_API_URL","http://localhost:8001")
+
+def call_groq(system:str,prompt:str)->str:
+    if not GROQ_API_KEY: raise HTTPException(503,"GROQ_API_KEY is not configured")
+    with httpx.Client(timeout=90) as http:
+        response=http.post(GROQ_URL,headers={"Authorization":f"Bearer {GROQ_API_KEY}"},json={
+          "model":MODEL,"temperature":0.1,"max_tokens":4000,
+          "messages":[{"role":"system","content":system},{"role":"user","content":prompt}]})
+        response.raise_for_status()
+        return response.json()["choices"][0]["message"]["content"].strip()
+projects:dict[str,dict[str,Any]]={}
+app=FastAPI(title="Meeting to Scope API",version="0.1.0")
+
+class MeetingRequest(BaseModel):
+    transcript:str=Field(min_length=20,max_length=100000)
+    project_id:str|None=None
+    approved_baseline:dict[str,Any]|None=None
+
+class ApprovalRequest(BaseModel):
+    reviewer:str=Field(min_length=1)
+    approved:bool
+    comments:str=""
+
+async def knowledge_check(requirements:list[dict]):
+    results=[]
+    async with httpx.AsyncClient(timeout=15) as http:
+        for req in requirements:
+            try:
+                r=await http.post(f"{KNOWLEDGE_URL}/query",json={"question":req.get("description",""),"top_k":3})
+                r.raise_for_status(); result=r.json()
+            except Exception as e:
+                result={"status":"unavailable","answer":"Knowledge service unavailable; human feasibility review required.","citations":[],"error":str(e)}
+            results.append({"requirement_id":req.get("id"),"description":req.get("description"),
+                            "knowledge_result":result,
+                            "classification":"needs_clarification" if result.get("status")!="answered" else "review_documented_capability"})
+    return results
+
+def parse_json_response(raw:str)->str:
+    raw=raw.removeprefix("```json").removesuffix("```").strip()
+    try: json.loads(raw)
+    except Exception: raise HTTPException(502,"Groq returned invalid JSON; retry after inspecting the response")
+    return raw
+
+@app.get("/health")
+def health(): return {"status":"ok","groqConfigured":bool(GROQ_API_KEY),"model":MODEL}
+
+@app.post("/api/projects")
+async def create_scope(req:MeetingRequest):
+    project_id=req.project_id or str(uuid.uuid4())
+    system="""You are the Transcript Analyst, Scope Agent, Estimation Agent, and Proposal Agent for a software consultancy.
+Return JSON only with keys: project_title, objective, requirements, open_questions, scope, estimates, proposal.
+requirements is an array of objects with id, description, source_quote, status (confirmed|unclear|disputed), priority (must_have|should_have|optional), acceptance_criteria, dependencies.
+Keep assumptions separate from facts. Never invent a client commitment. Estimates are ranges with low_hours, likely_hours, high_hours and assumptions.
+scope must include deliverables, exclusions, assumptions, dependencies, client_responsibilities, risks.
+proposal must include executive_summary, solution, milestones, pricing_assumptions, next_steps.
+Human approval is mandatory."""
+    raw=parse_json_response(call_groq(system,"Analyze this client meeting transcript. Preserve source quotes for key requirements.\n\n"+req.transcript))
+    result=json.loads(raw)
+    reqs=result.get("requirements",[])
+    result["feasibility_checks"]=await knowledge_check(reqs)
+    result["project_id"]=project_id
+    result["status"]="pending_approval"
+    result["version"]=1
+    result["created_at"]=time.time()
+    result["approved"]=False
+    result["transcripts"]=[req.transcript]
+    projects[project_id]=result
+    return result
+
+@app.post("/api/projects/{project_id}/follow-up")
+async def follow_up(project_id:str,req:MeetingRequest):
+    if project_id not in projects: raise HTTPException(404,"Project not found")
+    old=projects[project_id]
+    baseline=req.approved_baseline or old.get("approved_baseline") or {
+      "requirements":old.get("requirements",[]),"scope":old.get("scope",{}),"estimates":old.get("estimates",[])}
+    system="""Compare a follow-up transcript only against the supplied APPROVED BASELINE.
+Return JSON only with keys: additions, modifications, removals, unresolved_conflicts, revised_requirements, revised_scope, revised_estimates, change_summary.
+Each addition/modification/removal must explain evidence from the new transcript. Flag potentially out-of-scope items.
+Do not treat an unapproved draft as approved. Do not send anything to the client."""
+    raw=parse_json_response(call_groq(system,f"APPROVED BASELINE:\n{json.dumps(baseline)}\n\nFOLLOW-UP TRANSCRIPT:\n{req.transcript}"))
+    changes=json.loads(raw)
+    reqs=changes.get("revised_requirements",old.get("requirements",[]))
+    changes["feasibility_checks"]=await knowledge_check(reqs)
+    old["transcripts"].append(req.transcript)
+    old["latest_changes"]=changes
+    old["status"]="revision_pending_approval"
+    old["approved"]=False
+    old["version"]=int(old.get("version",1))+1
+    old.pop("approval",None)
+    return {"project_id":project_id,"version":old["version"],"status":old["status"],"changes":changes}
+
+@app.post("/api/projects/{project_id}/approve")
+def approve(project_id:str,req:ApprovalRequest):
+    if project_id not in projects: raise HTTPException(404,"Project not found")
+    p=projects[project_id]
+    p["approval"]={"reviewer":req.reviewer,"approved":req.approved,"comments":req.comments,"timestamp":time.time(),"version":p["version"]}
+    p["approved"]=req.approved
+    p["status"]="approved" if req.approved else "changes_requested"
+    if req.approved:
+        p["approved_baseline"]={"requirements":p.get("requirements",[]),"scope":p.get("scope",{}),"estimates":p.get("estimates",[])}
+    return {"project_id":project_id,"status":p["status"],"approval":p["approval"]}
+
+@app.get("/api/projects/{project_id}")
+def get_project(project_id:str):
+    if project_id not in projects: raise HTTPException(404,"Project not found")
+    return projects[project_id]

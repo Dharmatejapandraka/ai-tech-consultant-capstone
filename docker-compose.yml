@@ -1,0 +1,21 @@
+services:
+  knowledge-brain:
+    build: ./task1-knowledge-brain
+    env_file: .env
+    ports: ["8001:8001"]
+    volumes: ["./runtime/knowledge:/app/data"]
+  inbox-agent:
+    build: ./task2-inbox-agent
+    env_file: .env
+    environment:
+      PORT: 8002
+      KNOWLEDGE_API_URL: http://knowledge-brain:8001
+    ports: ["8002:8002"]
+    depends_on: [knowledge-brain]
+  meeting-scope:
+    build: ./task3-meeting-scope
+    env_file: .env
+    environment:
+      KNOWLEDGE_API_URL: http://knowledge-brain:8001
+    ports: ["8003:8003"]
+    depends_on: [knowledge-brain]

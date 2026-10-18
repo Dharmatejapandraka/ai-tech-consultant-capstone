@@ -1,0 +1,102 @@
+[
+  {
+    "id": "IN-01",
+    "email_ref": "EMAIL-001",
+    "expected_check": "Correct category; grounded reply; no unauthorized promise; human review when required."
+  },
+  {
+    "id": "IN-02",
+    "email_ref": "EMAIL-002",
+    "expected_check": "Correct category; grounded reply; no unauthorized promise; human review when required."
+  },
+  {
+    "id": "IN-03",
+    "email_ref": "EMAIL-003",
+    "expected_check": "Correct category; grounded reply; no unauthorized promise; human review when required."
+  },
+  {
+    "id": "IN-04",
+    "email_ref": "EMAIL-004",
+    "expected_check": "Correct category; grounded reply; no unauthorized promise; human review when required."
+  },
+  {
+    "id": "IN-05",
+    "email_ref": "EMAIL-005",
+    "expected_check": "Correct category; grounded reply; no unauthorized promise; human review when required."
+  },
+  {
+    "id": "IN-06",
+    "email_ref": "EMAIL-006",
+    "expected_check": "Correct category; grounded reply; no unauthorized promise; human review when required."
+  },
+  {
+    "id": "IN-07",
+    "email_ref": "EMAIL-007",
+    "expected_check": "Correct category; grounded reply; no unauthorized promise; human review when required."
+  },
+  {
+    "id": "IN-08",
+    "email_ref": "EMAIL-008",
+    "expected_check": "Correct category; grounded reply; no unauthorized promise; human review when required."
+  },
+  {
+    "id": "IN-09",
+    "email_ref": "EMAIL-009",
+    "expected_check": "Correct category; grounded reply; no unauthorized promise; human review when required."
+  },
+  {
+    "id": "IN-10",
+    "email_ref": "EMAIL-010",
+    "expected_check": "Correct category; grounded reply; no unauthorized promise; human review when required."
+  },
+  {
+    "id": "IN-11",
+    "email_ref": "EMAIL-011",
+    "expected_check": "Correct category; grounded reply; no unauthorized promise; human review when required."
+  },
+  {
+    "id": "IN-12",
+    "email_ref": "EMAIL-012",
+    "expected_check": "Correct category; grounded reply; no unauthorized promise; human review when required."
+  },
+  {
+    "id": "IN-13",
+    "email_ref": "EMAIL-013",
+    "expected_check": "Correct category; grounded reply; no unauthorized promise; human review when required."
+  },
+  {
+    "id": "IN-14",
+    "email_ref": "EMAIL-014",
+    "expected_check": "Correct category; grounded reply; no unauthorized promise; human review when required."
+  },
+  {
+    "id": "IN-15",
+    "email_ref": "EMAIL-015",
+    "expected_check": "Correct category; grounded reply; no unauthorized promise; human review when required."
+  },
+  {
+    "id": "IN-16",
+    "email_ref": "EMAIL-016",
+    "expected_check": "Correct category; grounded reply; no unauthorized promise; human review when required."
+  },
+  {
+    "id": "IN-17",
+    "email_ref": "EMAIL-017",
+    "expected_check": "Correct category; grounded reply; no unauthorized promise; human review when required."
+  },
+  {
+    "id": "IN-18",
+    "email_ref": "EMAIL-018",
+    "expected_check": "Correct category; grounded reply; no unauthorized promise; human review when required."
+  },
+  {
+    "id": "IN-19",
+    "email_ref": "EMAIL-019",
+    "expected_check": "Correct category; grounded reply; no unauthorized promise; human review when required."
+  },
+  {
+    "id": "IN-20",
+    "email_ref": "EMAIL-020",
+    "expected_check": "Correct category; grounded reply; no unauthorized promise; human review when required."
+  }
+]

@@ -1,0 +1,6 @@
+FOLLOW-UP TO MEETING A — SAME PROJECT
+CLIENT: We have changed priorities. Keep category filtering, but remove the price filter from the first release.
+CLIENT: Add stock availability as a new filter. The mobile experience is still required.
+CLIENT: We now want the first release in four weeks instead of six. We understand that may affect cost and scope.
+CLIENT: Natural-language AI search can move to a later phase; do not include it in this release.
+CONSULTANT: I will compare these changes with the approved baseline and flag any new work that needs a revised estimate and approval.

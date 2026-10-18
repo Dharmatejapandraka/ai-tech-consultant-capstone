@@ -1,0 +1,410 @@
+[
+  {
+    "id": "EMAIL-001",
+    "category": "how_to",
+    "from": "customer01@example.com",
+    "subject": "How do I update my website logo?",
+    "body": "Please tell me where to change the logo in the admin settings.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-002",
+    "category": "how_to",
+    "from": "customer02@example.com",
+    "subject": "How can I change the homepage banner?",
+    "body": "I need to replace the homepage banner image. What steps should I follow?",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-003",
+    "category": "how_to",
+    "from": "customer03@example.com",
+    "subject": "Where can I edit business hours?",
+    "body": "Please explain how to update our business opening hours.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-004",
+    "category": "how_to",
+    "from": "customer04@example.com",
+    "subject": "How do I add a staff member?",
+    "body": "I want to add a new staff profile. Where is that setting?",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-005",
+    "category": "how_to",
+    "from": "customer05@example.com",
+    "subject": "How can I update my profile details?",
+    "body": "I need to update my display name and contact details.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-006",
+    "category": "how_to",
+    "from": "customer06@example.com",
+    "subject": "How do I change a page title?",
+    "body": "Can you tell me how to edit the title of a page?",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-007",
+    "category": "how_to",
+    "from": "customer07@example.com",
+    "subject": "How do I upload a gallery image?",
+    "body": "I want to add an image to my gallery.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-008",
+    "category": "how_to",
+    "from": "customer08@example.com",
+    "subject": "How can I reset my password?",
+    "body": "I cannot remember my password. What is the supported reset process?",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-009",
+    "category": "how_to",
+    "from": "customer09@example.com",
+    "subject": "How do I add a new category?",
+    "body": "Please show me how to create a new category.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-010",
+    "category": "how_to",
+    "from": "customer10@example.com",
+    "subject": "How can I edit a menu item?",
+    "body": "I need to change the label and link in the navigation menu.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-011",
+    "category": "how_to",
+    "from": "customer11@example.com",
+    "subject": "How do I update my address?",
+    "body": "Where do I edit the business address shown on the website?",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-012",
+    "category": "how_to",
+    "from": "customer12@example.com",
+    "subject": "How can I change notification preferences?",
+    "body": "I want to adjust which notifications I receive.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-013",
+    "category": "troubleshooting",
+    "from": "customer13@example.com",
+    "subject": "My payment integration stopped working",
+    "body": "Payments started failing this morning. How can we troubleshoot this?",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-014",
+    "category": "troubleshooting",
+    "from": "customer14@example.com",
+    "subject": "Images are not loading",
+    "body": "Images on several pages are broken. Can you help diagnose the issue?",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-015",
+    "category": "troubleshooting",
+    "from": "customer15@example.com",
+    "subject": "Users cannot log in",
+    "body": "Several customers say login is failing. What information do you need?",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-016",
+    "category": "troubleshooting",
+    "from": "customer16@example.com",
+    "subject": "The page loads slowly",
+    "body": "Our homepage is slower than usual. What should we check?",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-017",
+    "category": "troubleshooting",
+    "from": "customer17@example.com",
+    "subject": "Email notifications are delayed",
+    "body": "Notifications are arriving late. Please advise.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-018",
+    "category": "troubleshooting",
+    "from": "customer18@example.com",
+    "subject": "The form returns an error",
+    "body": "Submitting our contact form displays an error message.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-019",
+    "category": "troubleshooting",
+    "from": "customer19@example.com",
+    "subject": "Search results look incomplete",
+    "body": "Some products do not appear in search results.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-020",
+    "category": "troubleshooting",
+    "from": "customer20@example.com",
+    "subject": "Mobile layout is broken",
+    "body": "The menu overlaps the page on some phones.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-021",
+    "category": "troubleshooting",
+    "from": "customer21@example.com",
+    "subject": "I see a 500 error",
+    "body": "Our site sometimes returns a 500 error. What logs should we collect?",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-022",
+    "category": "troubleshooting",
+    "from": "customer22@example.com",
+    "subject": "A plugin stopped working",
+    "body": "A plugin stopped working after a recent update.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-023",
+    "category": "project_request",
+    "from": "customer23@example.com",
+    "subject": "Can you add a booking feature?",
+    "body": "We want customers to book appointments online. Please help clarify requirements.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-024",
+    "category": "project_request",
+    "from": "customer24@example.com",
+    "subject": "Can you redesign our dashboard?",
+    "body": "We need a cleaner dashboard with better mobile usability.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-025",
+    "category": "project_request",
+    "from": "customer25@example.com",
+    "subject": "Can you add product filters?",
+    "body": "We want category and price filters in product search.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-026",
+    "category": "project_request",
+    "from": "customer26@example.com",
+    "subject": "Can you integrate our CRM?",
+    "body": "We want website leads sent to our CRM. We have not selected the integration method.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-027",
+    "category": "project_request",
+    "from": "customer27@example.com",
+    "subject": "Can you build a customer portal?",
+    "body": "Customers should log in and view their order history.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-028",
+    "category": "project_request",
+    "from": "customer28@example.com",
+    "subject": "Can you add AI search?",
+    "body": "We want natural-language product search but need help defining it.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-029",
+    "category": "project_request",
+    "from": "customer29@example.com",
+    "subject": "Can you migrate our site?",
+    "body": "We want to migrate to a new platform. What details are needed?",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-030",
+    "category": "refund_cancellation",
+    "from": "customer30@example.com",
+    "subject": "Please refund my subscription",
+    "body": "I would like a refund. Please confirm the policy and eligibility.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-031",
+    "category": "refund_cancellation",
+    "from": "customer31@example.com",
+    "subject": "Cancel our plan",
+    "body": "Please cancel our plan at the end of the current billing period.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-032",
+    "category": "refund_cancellation",
+    "from": "customer32@example.com",
+    "subject": "I was charged twice",
+    "body": "I see two charges for the same period. Please investigate; do not assume a refund is approved.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-033",
+    "category": "refund_cancellation",
+    "from": "customer33@example.com",
+    "subject": "Can I reverse this payment?",
+    "body": "I made a payment by mistake. What is the review process?",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-034",
+    "category": "refund_cancellation",
+    "from": "customer34@example.com",
+    "subject": "Please stop renewal",
+    "body": "Please tell me how to stop automatic renewal.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-035",
+    "category": "refund_cancellation",
+    "from": "customer35@example.com",
+    "subject": "We want to downgrade",
+    "body": "Can you explain the downgrade process and any billing implications?",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-036",
+    "category": "complaint",
+    "from": "customer36@example.com",
+    "subject": "The update broke our website",
+    "body": "After the update, our homepage layout is broken. This is urgent.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-037",
+    "category": "complaint",
+    "from": "customer37@example.com",
+    "subject": "Support has not replied",
+    "body": "I contacted support several days ago and have not received an answer.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-038",
+    "category": "complaint",
+    "from": "customer38@example.com",
+    "subject": "We are unhappy with the service",
+    "body": "The service has been unreliable this week. Please explain next steps.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-039",
+    "category": "complaint",
+    "from": "customer39@example.com",
+    "subject": "Our data looks incorrect",
+    "body": "The dashboard shows values that do not match our records.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-040",
+    "category": "complaint",
+    "from": "customer40@example.com",
+    "subject": "A feature disappeared",
+    "body": "A feature we used is no longer visible after the update.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-041",
+    "category": "complaint",
+    "from": "customer41@example.com",
+    "subject": "The response was unhelpful",
+    "body": "The previous reply did not address my question.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-042",
+    "category": "quote_request",
+    "from": "customer42@example.com",
+    "subject": "How much does a custom filter cost?",
+    "body": "Please provide an estimate for adding a custom filter. We have not agreed on scope.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-043",
+    "category": "quote_request",
+    "from": "customer43@example.com",
+    "subject": "Can you quote a new landing page?",
+    "body": "We need a landing page; please tell us what information is required for a quote.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-044",
+    "category": "quote_request",
+    "from": "customer44@example.com",
+    "subject": "What is the cost of CRM integration?",
+    "body": "We are considering a CRM integration and want a preliminary estimate.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-045",
+    "category": "quote_request",
+    "from": "customer45@example.com",
+    "subject": "Can you estimate a checkout change?",
+    "body": "We need checkout changes, but details and payment-provider approval are pending.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-046",
+    "category": "quote_request",
+    "from": "customer46@example.com",
+    "subject": "How much for a mobile redesign?",
+    "body": "Please estimate a mobile redesign after clarifying deliverables.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-047",
+    "category": "follow_up",
+    "from": "customer47@example.com",
+    "subject": "Did you receive my request?",
+    "body": "I sent a request yesterday. Could you confirm it was received?",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-048",
+    "category": "follow_up",
+    "from": "customer48@example.com",
+    "subject": "Any update on the payment issue?",
+    "body": "Following up on the payment issue. Please share status if available.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-049",
+    "category": "follow_up",
+    "from": "customer49@example.com",
+    "subject": "Can we schedule a review?",
+    "body": "Can we schedule a review of the draft proposal?",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-050",
+    "category": "follow_up",
+    "from": "customer50@example.com",
+    "subject": "I sent the requested screenshots",
+    "body": "Following up: I sent screenshots earlier. Let me know if you need anything else.",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  },
+  {
+    "id": "EMAIL-051",
+    "category": "follow_up",
+    "from": "customer51@example.com",
+    "subject": "When will the change be ready?",
+    "body": "Could you share the approved delivery timeline for the requested change?",
+    "expected_behavior": "Use Knowledge Brain evidence; ask for clarification or escalate when evidence/authorization is missing."
+  }
+]

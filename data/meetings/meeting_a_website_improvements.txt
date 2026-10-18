@@ -1,0 +1,7 @@
+CLIENT: Our website search isn't great. Customers can't find products quickly. We want filters and a better mobile experience. Maybe AI search as well.
+CONSULTANT: Which filters matter most?
+CLIENT: Category and price are must-haves. Brand might be useful. We have about 2,000 products. We need mobile users to be able to apply filters without the page jumping around.
+CONSULTANT: What does AI search mean to you?
+CLIENT: Ideally it understands natural-language queries, but we have not defined examples or a budget for that yet.
+CLIENT: We want a first release in six weeks. We can provide product data and access to a staging site. We have not confirmed the analytics events or acceptance thresholds.
+CONSULTANT: I will check whether the current platform supports filters through configuration before estimating custom work.

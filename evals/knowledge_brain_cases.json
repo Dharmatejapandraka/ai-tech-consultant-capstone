@@ -1,0 +1,102 @@
+[
+  {
+    "id": "KB-01",
+    "question": "How do I update the website logo?",
+    "expected": "Manually specify supported answer, required citation, or expected abstention before running."
+  },
+  {
+    "id": "KB-02",
+    "question": "How do I change business hours?",
+    "expected": "Manually specify supported answer, required citation, or expected abstention before running."
+  },
+  {
+    "id": "KB-03",
+    "question": "How do I reset a password?",
+    "expected": "Manually specify supported answer, required citation, or expected abstention before running."
+  },
+  {
+    "id": "KB-04",
+    "question": "How do I add a staff member?",
+    "expected": "Manually specify supported answer, required citation, or expected abstention before running."
+  },
+  {
+    "id": "KB-05",
+    "question": "How can I upload a gallery image?",
+    "expected": "Manually specify supported answer, required citation, or expected abstention before running."
+  },
+  {
+    "id": "KB-06",
+    "question": "How do I change notification preferences?",
+    "expected": "Manually specify supported answer, required citation, or expected abstention before running."
+  },
+  {
+    "id": "KB-07",
+    "question": "How do I add a new category?",
+    "expected": "Manually specify supported answer, required citation, or expected abstention before running."
+  },
+  {
+    "id": "KB-08",
+    "question": "How can I edit a page title?",
+    "expected": "Manually specify supported answer, required citation, or expected abstention before running."
+  },
+  {
+    "id": "KB-09",
+    "question": "Where do I change a menu item?",
+    "expected": "Manually specify supported answer, required citation, or expected abstention before running."
+  },
+  {
+    "id": "KB-10",
+    "question": "How do I update a business address?",
+    "expected": "Manually specify supported answer, required citation, or expected abstention before running."
+  },
+  {
+    "id": "KB-11",
+    "question": "What should I do if payment integration fails?",
+    "expected": "Manually specify supported answer, required citation, or expected abstention before running."
+  },
+  {
+    "id": "KB-12",
+    "question": "Why might images fail to load?",
+    "expected": "Manually specify supported answer, required citation, or expected abstention before running."
+  },
+  {
+    "id": "KB-13",
+    "question": "What information is needed to debug a 500 error?",
+    "expected": "Manually specify supported answer, required citation, or expected abstention before running."
+  },
+  {
+    "id": "KB-14",
+    "question": "What should I check when the site is slow?",
+    "expected": "Manually specify supported answer, required citation, or expected abstention before running."
+  },
+  {
+    "id": "KB-15",
+    "question": "How can I troubleshoot delayed notifications?",
+    "expected": "Manually specify supported answer, required citation, or expected abstention before running."
+  },
+  {
+    "id": "KB-16",
+    "question": "How do I integrate a CRM?",
+    "expected": "Manually specify supported answer, required citation, or expected abstention before running."
+  },
+  {
+    "id": "KB-17",
+    "question": "What is the exact refund policy for my account?",
+    "expected": "Manually specify supported answer, required citation, or expected abstention before running."
+  },
+  {
+    "id": "KB-18",
+    "question": "Does the product support a feature not mentioned in the help center?",
+    "expected": "Manually specify supported answer, required citation, or expected abstention before running."
+  },
+  {
+    "id": "KB-19",
+    "question": "Can you answer a question whose only evidence is a screenshot?",
+    "expected": "Manually specify supported answer, required citation, or expected abstention before running."
+  },
+  {
+    "id": "KB-20",
+    "question": "What happens when an article is removed from the sitemap?",
+    "expected": "Manually specify supported answer, required citation, or expected abstention before running."
+  }
+]
